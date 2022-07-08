@@ -35,7 +35,7 @@ end
 
 local function AutoQuest()
     while task.wait() do
-        if getgenv().Settings.AutoQuest then
+        if getgenv().Settings.AutoQuest and game:GetService("Players").LocalPlayer.QuestArea.Value ~= 0 then
             Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Areas["Area" .. game:GetService("Players").LocalPlayer.QuestArea.Value].CFrame * CFrame.new(0, 4, 0)
         end
         if getgenv().Settings.AutoClaimQuest and game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.Main.Top.QuestFrame.Checkmark.Check.Visible then
