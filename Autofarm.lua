@@ -1,4 +1,6 @@
-
+if getgenv().Ran then return end
+getgenv().Ran = true
+print("Ran")
 local LocalPlayer = game.Players.LocalPlayer
 local Character =  LocalPlayer.Character
 local QuestArea = game:GetService("Players").LocalPlayer.QuestArea
