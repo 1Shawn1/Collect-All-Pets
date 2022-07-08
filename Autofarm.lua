@@ -1,22 +1,3 @@
-getgenv().Settings = {
-    AutoEgg = {
-        Enabled = false,
-        Egg = 1,
-        AutoFuse = {
-            Enabled = false,
-            FuseEquipPets = false,
-            Common = true,
-            Uncommon = true,
-            Rare = true,
-            Epic = true,
-            Legendary = false,
-            Prodigious = false,
-            Ascended = false
-        },
-    },
-    AutoQuest = true,
-    AutoClaimQuest = true
-}
 
 local LocalPlayer = game.Players.LocalPlayer
 local Character =  LocalPlayer.Character
