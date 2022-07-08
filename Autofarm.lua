@@ -59,8 +59,6 @@ local function AutoQuest()
         end
         if getgenv().Settings.AutoClaimQuest and game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.Main.Top.QuestFrame.Checkmark.Check.Visible then
             game:GetService("ReplicatedStorage").Remotes.ClaimQuestReward:FireServer()
-            wait(1.5)
-            game:GetService("ReplicatedStorage").Remotes.EquipBest:FireServer()
         end
     end
 end
