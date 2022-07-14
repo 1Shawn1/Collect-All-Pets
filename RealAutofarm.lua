@@ -1,4 +1,5 @@
-
+if getgenv().Ran then return end
+getgenv().Ran = true
 getgenv()[game.Players.LocalPlayer.UserId] = {
     AutoEgg = {
         Enabled = true,
